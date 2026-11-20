@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F5FA"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="♡ OurCanvas"
+            android:textColor="#241D32"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="A little space for the two of us."
+            android:textColor="#716A7C"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:text="Connect your shared canvas"
+            android:textColor="#241D32"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Paste the invite link you received from OurCanvas. Use the same link on both phones."
+            android:textColor="#716A7C"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/inviteLinkInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:autofillHints="url"
+            android:hint="Paste your OurCanvas invite link"
+            android:inputType="textUri"
+            android:minHeight="56dp"
+            android:padding="14dp"
+            android:singleLine="true"
+            android:textColor="#241D32"
+            android:textColorHint="#928B9D"
+            android:backgroundTint="#8D72D8" />
+
+        <Button
+            android:id="@+id/connectButton"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="16dp"
+            android:text="Connect canvas"
+            android:textAllCaps="false" />
+
+        <TextView
+            android:id="@+id/statusText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textColor="#716A7C"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="After connecting, add the OurCanvas widget from your phone's home-screen widget picker. Tap the widget to open the canvas and draw on the website."
+            android:textColor="#716A7C"
+            android:textSize="14sp" />
+    </LinearLayout>
+</ScrollView>
