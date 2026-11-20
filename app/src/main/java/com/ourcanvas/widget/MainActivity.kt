@@ -32,7 +32,7 @@ class MainActivity : Activity() {
             prefs.edit().putString(KEY_ROOM_ID, roomId).apply()
             status.text = "Canvas connected. Add the OurCanvas widget to your home screen."
             sendBroadcast(
-                Intent(AppWidgetManager.ACTION_APPWIDGET_UPDATE)
+                Intent("com.ourcanvas.widget.ACTION_REFRESH")
                     .setComponent(ComponentName(this, CanvasWidgetProvider::class.java))
             )
         }
